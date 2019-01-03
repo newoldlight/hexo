@@ -1,0 +1,35 @@
+# 2015年试题总结
+
+1. 分布式数据概念：
+
+   1. 分片透明
+   2. 复制透明
+   3. 位置透明
+   4. 逻辑透明
+
+   > 分片透明是指用户或应用程序不需要知道逻辑上访问的表具体是怎么分块存储的。复制透明是指采用复制技术的分布方法，用户不需要知道数据是复制到哪些节点，如何复制的位置透明是指用户无须知道数据存放的物理位置，逻辑透明，即局部数据模型透明，是指用户或应用程序无须知道局部场地使用的是哪种数据模型。
+
+2. RAID
+
+   1. RAID5:
+
+   > 也就是说磁盘做[RAID5](https://www.baidu.com/s?wd=RAID5&tn=44039180_cpr&fenlei=mv6quAkxTZn0IZRqIHckPjm4nH00T1Y4njK-rjTzm1--Phu-PhFh0ZwV5Hcvrjm3rH6sPfKWUMw85HfYnjn4nH6sgvPsT6KdThsqpZwYTjCEQLGCpyw9Uz4Bmy-bIi4WUvYETgN-TLwGUv3EnHTknjTkrHcd)后系统可使用容量为：
+   >
+   > 单块磁盘容量*（n-1) 所以你4块盘的[RAID5](https://www.baidu.com/s?wd=RAID5&tn=44039180_cpr&fenlei=mv6quAkxTZn0IZRqIHckPjm4nH00T1Y4njK-rjTzm1--Phu-PhFh0ZwV5Hcvrjm3rH6sPfKWUMw85HfYnjn4nH6sgvPsT6KdThsqpZwYTjCEQLGCpyw9Uz4Bmy-bIi4WUvYETgN-TLwGUv3EnHTknjTkrHcd)，可用容量为：500G*(4-1)=1500G=1.5T 
+
+3. 软件架构风格与系统性能的关系：
+
+   1. 管道/过滤器：
+      1. 缺点：不适合处理交互的应用，增加了过滤器的复杂性，导致系统性能下降。
+   2. 面向对象风格：
+      1. 
+   3. 基于事件的隐式调用
+   4. 分层系统
+   5. 仓库系统及知识库
+   6. C2风格
+
+4. 用例：
+
+   1. 包含：
+   2. 扩展：
+   3. 泛化：
